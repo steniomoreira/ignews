@@ -21,8 +21,6 @@ export default NextAuth({
         q.Casefold(email)
       )
 
-console.log(email);
-
       try {
         await fauna.query(
           q.If(
